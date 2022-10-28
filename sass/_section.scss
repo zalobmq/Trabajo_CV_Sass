@@ -1,0 +1,38 @@
+@import "_vars";
+@import "_functions";
+/// @group section
+/// Estilos para las secciones.
+.section {
+
+    margin-top: 15px;
+
+    //Linea separadora
+    .section__title {
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    /// Cambiar colores de los titulos, estos colores se reciben de la funcion colorSectionTitle()
+    @for $i from 1 through length($lista-colores) {
+        .section-title-#{$i} {
+            color: colorSectionTitle($i);
+        }
+    }
+    .section__list-item{
+        margin-bottom: 10px;
+        .name{
+            font-weight: bold;
+        }
+
+        .left{
+            width: 40%;
+            vertical-align: top;
+            display: inline-block;
+        }
+        .right{
+            width: 20%;
+            vertical-align: top;
+            display: inline-block;
+        }
+        
+    }
+}

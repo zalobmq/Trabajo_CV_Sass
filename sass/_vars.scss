@@ -1,0 +1,22 @@
+
+/// Colores titulos de seccion.
+/// @group colores_titulos
+$titulo1:red;
+$titulo2:rgb(0, 255, 0);
+$titulo3:rgb(255, 166, 0);
+$titulo4:rgb(0, 81, 255);
+
+/// Lista colores para titulos.
+$lista-colores: ($titulo1,$titulo2,$titulo3,$titulo4);
+
+/// Tema por defecto en la pagina.
+/// @group colores_tema_claro
+$fondo-claro:rgb(214, 212, 212);
+$fuente-claro:black;
+
+/// Tema cambiado oscuro
+/// @group colores_tema_oscuro
+$fondo-oscuro:rgb(43, 43, 43);
+$fuente-oscuro:rgb(255, 255, 255);
+
+

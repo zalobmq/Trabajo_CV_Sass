@@ -1,0 +1,38 @@
+/// @group mixins
+/// Mixin para resetear los margenes de las etiquetas:
+/// p,h1,h2,h3,h4,h5,h6
+@mixin reset{
+    p,h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+}
+
+
+/// Mixin indicado en la tarea.
+/// Mixin de centrado.
+/// @param {Number} $margen-superior
+/// @param {Number} $margen-inferior
+/// @param {Number} $tamano
+/// @group Mixins
+@mixin centrado($margen-superior, $margen-inferior, $tamano){
+    margin-top: $margen-superior;
+    margin-bottom: $margen-inferior;
+    max-width: $tamano;
+}
+
+
+/// Mixin mejorado por gonzalobmq.
+/// Mixin de centrado.
+/// @param {Number} $margen-superior
+/// @param {Number} $margen-inferior
+/// @param {Number} $margen-izq
+/// @param {Number} $margen-der
+/// @param {Number} $tamano
+/// @group Mixins
+@mixin centradoV2($margen-superior, $margen-inferior,$margen-izq, $margen-der, $tamano){
+    margin-top: $margen-superior;
+    margin-bottom: $margen-inferior;
+    margin-left: $margen-izq;
+    margin-right: $margen-der;
+    max-width: $tamano;
+}

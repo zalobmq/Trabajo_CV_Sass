@@ -1,0 +1,10 @@
+@import "_vars";
+/// Funcion para seleccionar un color de la lista de colores.
+/// @group funciones
+/// @param {Number} $entero
+
+@function colorSectionTitle($entero){
+    @return nth($list: $lista-colores, $n: $entero);
+}
+
+
